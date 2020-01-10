@@ -9,6 +9,7 @@
 
 ## Как запустить проект:
  - packer build ./ubuntu16.json
+ - packer build  -var 'project_id=262605' -var-file=./variables.json  -var 'sourceImageFamily=ubuntu-1604-lts'  ./ubuntu16.json
  - puma -d
 
 ## Как проверить работоспособность:
