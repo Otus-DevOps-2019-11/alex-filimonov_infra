@@ -1,13 +1,21 @@
-# Выполнено ДЗ № 8
+# Выполнено ДЗ № 9
 
  - [*] Основное ДЗ
  - [ ] Задание со *
 
 ## В процессе сделано:
- - написан конфиг terraform для развертывания сервера и приложения reddit-app
+1) написан модуль для развертывания приложения app
+2) написан модуль для развертывания сервера  mongo data base
+3) написан модуль для создания правила ssh fire wall role
+4) создан конфиг terraform для создания среды prod
+5) создан конфиг terraform для создания среды stage
+6) создан конфиг terraform для создания storage
 
 ## Как запустить проект:
- cd ./terrafrom
+ cd ./prod
+ - terraform destroy
+ - terraform apply
+ cd ./stage
  - terraform destroy
  - terraform apply
 
