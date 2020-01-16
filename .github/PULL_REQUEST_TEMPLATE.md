@@ -1,26 +1,21 @@
-# Выполнено ДЗ № 9
+# Выполнено ДЗ № 10
 
  - [*] Основное ДЗ
- - [ ] Задание со *
+ - [*] Задание со *
 
 ## В процессе сделано:
-1) написан модуль для развертывания приложения app
-2) написан модуль для развертывания сервера  mongo data base
-3) написан модуль для создания правила ssh fire wall role
-4) создан конфиг terraform для создания среды prod
-5) создан конфиг terraform для создания среды stage
-6) создан конфиг terraform для создания storage
+1) создал invntory и протестировал ping
+ansible all -i  -m ping
+2) сделал  ansible.cfg и протестировал
+3) сделал inventory.yml и протестировал
+ansible all -i inventory.yml  -m ping
+4) сделаk my.py и протестировал - задание (*)
+ansible all -i my.py  -m ping
 
 ## Как запустить проект:
- cd ./prod
- - terraform destroy
- - terraform apply
- cd ./stage
- - terraform destroy
- - terraform apply
 
 ## Как проверить работоспособность:
- - http://{{app_external_ip}}:9292/
+ansible all -m ping
 
 ## PR checklist
  - [ ] Выставил label с номером домашнего задания
