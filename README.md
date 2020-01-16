@@ -31,3 +31,4 @@ ansible all -i  -m ping
 ansible all -i inventory.yml  -m ping
 4) сделаk my.py и протестировал - задание (*)
 ansible all -i my.py  -m ping
+=======
