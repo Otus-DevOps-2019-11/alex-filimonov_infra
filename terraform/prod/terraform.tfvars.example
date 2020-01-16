@@ -1,0 +1,8 @@
+project          = "infra-id"
+region           = "europe-west6"
+public_key_path  = "~/.ssh/appuser.pub"
+disk_image       = "reddit-base"
+private_key_path = "~/.ssh/appuser"
+zone             = "europe-west6-a"
+app_disk_image   = "reddit-app-base"
+db_disk_image    = "reddit-db-base"
