@@ -3,20 +3,20 @@
      {
 	"type": "googlecompute",
 	"project_id": "infra-{{user `project_id`}}",
-	"image_name": "reddit-db-base",
+	"image_name": "reddit-db-base-ans",
 	"image_family": "reddit-base",
 	"source_image_family": "{{user `sourceImageFamily`}}",
 	"zone": "europe-west1-b",
 	"ssh_username": "appuser",
-	"machine_type": "{{user `machine_type`}}",
+	"machine_type": "n1-standard-1",
 	"subnetwork": "default"
      }
     ],
     "provisioners": [
      {
-        "type": "shell",
-        "script": "scripts/install_mongodb.sh",
-        "execute_command": "sudo {{.Path}}"
+        "type": "ansible",
+	"user": "appuser",
+        "playbook_file": "ansible/packer_db.yml"
      }
     ]
 }

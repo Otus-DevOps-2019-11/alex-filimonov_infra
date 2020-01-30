@@ -3,7 +3,7 @@
      {
 	"type": "googlecompute",
 	"project_id": "infra-{{user `project_id`}}",
-	"image_name": "reddit-app-base",
+	"image_name": "reddit-app-base-ans",
 	"image_family": "reddit-base",
 	"source_image_family": "{{user `sourceImageFamily`}}",
 	"zone": "europe-west1-b",
@@ -13,10 +13,11 @@
      }
     ],
     "provisioners": [
-     {
-        "type": "shell",
-        "script": "scripts/install_ruby.sh",
-        "execute_command": "sudo {{.Path}}"
-     }
+    {
+	"type": "ansible",
+	"user": "appuser",
+	"playbook_file": "ansible/packer_app.yml"
+    }
+
     ]
 }
