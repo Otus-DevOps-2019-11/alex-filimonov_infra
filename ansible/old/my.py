@@ -39,7 +39,7 @@ class ExampleInventory(object):
                 'hosts': ['35.190.222.108']
             },
 	    'db': {
-		'hosts': ['35.195.45.180']
+		'hosts': ['35.241.193.39']
 	    }
         }
 
