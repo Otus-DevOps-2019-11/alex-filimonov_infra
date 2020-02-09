@@ -1,0 +1,8 @@
+---
+- name: Converge
+  become: true
+  hosts: all
+  vars:
+    mongo_bing_ip: 0.0.0.0
+  roles:
+    - role: db
