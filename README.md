@@ -11,6 +11,13 @@ testapp_port = 9292
 
 DO
 
+monitoring-2
+
+1) Сделали мониторинг docker контейнеров
+2) настроили cAdvisor, посмотрел инфу по контейнерам
+3) настроил grafon визуализировали метрики
+4) настроил alert manager и передал alert в slack
+
 monitoring-1
 
 1) Запустили, сконфигурировали и познакомились с Prometheus
