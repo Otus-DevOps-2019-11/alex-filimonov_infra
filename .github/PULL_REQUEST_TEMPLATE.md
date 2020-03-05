@@ -4,18 +4,19 @@
  - [] Задание со *
 
 ## В процессе сделано:
-gitlab-ci-1
+monitoring-1
 
-1) развернули ВМ для GitLab
-2) установили и настроили GitLab
-3) определили Pipeline, Запустили и даже заработало
-4) определили настройки Dev.
-5) настроили даинамическое окружение
+1) Запустили, сконфигурировали и познакомились с Prometheus
+2) Настроили мониторинг микросервисов
+3) Собрали метрики с хоста использовав node exporter
 
+https://hub.docker.com/repository/docker/123489/prometheus
+https://hub.docker.com/repository/docker/123489/post
+https://hub.docker.com/repository/docker/123489/comment
+https://hub.docker.com/repository/docker/123489/ui
 
 ## Как запустить проект:
 
-http://34.65.15.53/
 
 ## Как проверить работоспособность:
 
