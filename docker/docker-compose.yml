@@ -53,6 +53,7 @@ services:
 
 volumes:
   post_db:
+  prometheus_data:
 
 networks:
   reddit:

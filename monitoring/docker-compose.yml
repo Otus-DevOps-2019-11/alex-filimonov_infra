@@ -29,7 +29,7 @@ services:
     ports:
       - '9090:9090'
     volumes:
-      - prometheus_data:/prometheus
+      - prometheus_data:/prometheus:rw
     command:
       - '--config.file=/etc/prometheus/prometheus.yml'
       - '--storage.tsdb.path=/prometheus'
@@ -54,7 +54,7 @@ services:
 
 volumes:
   post_db:
-  prometheus_data:/prometheus:rw
+  prometheus_data:
 
 networks:
   reddit:
