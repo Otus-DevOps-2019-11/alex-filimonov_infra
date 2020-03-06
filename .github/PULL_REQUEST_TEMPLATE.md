@@ -4,12 +4,14 @@
  - [] Задание со *
 
 ## В процессе сделано:
-monitoring-1
+monitoring-2
 
-1) Запустили, сконфигурировали и познакомились с Prometheus
-2) Настроили мониторинг микросервисов
-3) Собрали метрики с хоста использовав node exporter
+1) Сделали мониторинг docker контейнеров
+2) настроили cAdvisor, посмотрел инфу по контейнерам
+3) настроил grafon визуализировали метрики
+4) настроил alert manager и передал alert в slack
 
+https://hub.docker.com/repository/docker/123489/alertmanager
 https://hub.docker.com/repository/docker/123489/prometheus
 https://hub.docker.com/repository/docker/123489/post
 https://hub.docker.com/repository/docker/123489/comment
