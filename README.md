@@ -11,6 +11,18 @@ testapp_port = 9292
 
 DO
 
+monitoring-1
+
+1) Запустили, сконфигурировали и познакомились с Prometheus
+2) Настроили мониторинг микросервисов
+3) Собрали метрики с хоста использовав node exporter
+
+https://hub.docker.com/repository/docker/123489/prometheus
+https://hub.docker.com/repository/docker/123489/post
+https://hub.docker.com/repository/docker/123489/comment
+https://hub.docker.com/repository/docker/123489/ui
+
+
 gitlab-ci-1
 
 1) развернули ВМ для GitLab
