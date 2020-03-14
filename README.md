@@ -11,6 +11,13 @@ testapp_port = 9292
 
 DO
 
+logging-1
+
+1) установили и настроили ElasticSearch Logstash и Kibana
+2) Долго мучился с запуском ElasticSearch в результате запустил
+3) Получили данные из не струк логов
+4) Запустили и настроили Zipkin
+
 monitoring-2
 
 1) Сделали мониторинг docker контейнеров
