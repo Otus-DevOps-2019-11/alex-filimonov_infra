@@ -4,18 +4,14 @@
  - [] Задание со *
 
 ## В процессе сделано:
-monitoring-2
+logging-1
 
-1) Сделали мониторинг docker контейнеров
-2) настроили cAdvisor, посмотрел инфу по контейнерам
-3) настроил grafon визуализировали метрики
-4) настроил alert manager и передал alert в slack
+logging-1
 
-https://hub.docker.com/repository/docker/123489/alertmanager
-https://hub.docker.com/repository/docker/123489/prometheus
-https://hub.docker.com/repository/docker/123489/post
-https://hub.docker.com/repository/docker/123489/comment
-https://hub.docker.com/repository/docker/123489/ui
+1) установили и настроили ElasticSearch Logstash и Kibana
+2) Долго мучился с запуском ElasticSearch в результате запустил
+3) Получили данные из не струк логов
+4) Запустили и настроили Zipkin
 
 ## Как запустить проект:
 
