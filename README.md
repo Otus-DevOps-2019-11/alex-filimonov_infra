@@ -11,6 +11,38 @@ testapp_port = 9292
 
 DO
 
+kubernetes-1
+
+1) Прошел Kubernetes The Hard Way (единственное из за ограничения бесплатного аккаунта сделал схему 3 контроллера и 1 воркер)
+    Smoke Test - прошел
+
+2) Сделал файлы deploy и задеплоил их (и они даже заработали :) )
+
+root@server:/opt/work/Test/otus/alex-filimonov_infra/kubernetes/reddit# kubectl get pods
+NAME                                 READY   STATUS    RESTARTS   AGE
+comment-deployment-f887597c8-9cqtm   1/1     Running   0          35s
+mongo-deployment-86d49445c4-flkfg    1/1     Running   0          5m43s
+nginx-554b9c67f9-v8lqz               1/1     Running   0          41m
+post-deployment-84999d9569-rrz9w     1/1     Running   0          5m51s
+ui-deployment-5554d5fdfc-ttj7b       1/1     Running   0          24s
+
+
+ kubectl get componentstatuses
+NAME                 STATUS    MESSAGE             ERROR
+controller-manager   Healthy   ok
+scheduler            Healthy   ok
+etcd-0               Healthy   {"health":"true"}
+etcd-2               Healthy   {"health":"true"}
+etcd-1               Healthy   {"health":"true"}
+
+# kubectl get nodes
+NAME       STATUS   ROLES    AGE   VERSION
+worker-0   Ready    <none>   10h   v1.15.3
+
+
+
+
+
 logging-1
 
 1) установили и настроили ElasticSearch Logstash и Kibana
