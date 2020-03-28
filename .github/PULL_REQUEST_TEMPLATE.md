@@ -5,38 +5,27 @@
 
 ## В процессе сделано:
 
-kubernetes-1
+kubernetes-2
 
-1) Прошел Kubernetes The Hard Way (единственное из за ограничения бесплатного аккаунта сделал схему 3 контроллера и 1 воркер)
-2) Сделал файлы deploy и задеплоил их (и они даже заработали)
+kubernetes-2
 
- kubectl get componentstatuses
-NAME                 STATUS    MESSAGE             ERROR
-controller-manager   Healthy   ok
-scheduler            Healthy   ok
-etcd-0               Healthy   {"health":"true"}
-etcd-2               Healthy   {"health":"true"}
-etcd-1               Healthy   {"health":"true"}
+1) Развернули локальный minikube, настроили локальный кластер, создали конфигурацию развертыванмия приложения, протестировали локально
+2) Развернули класткр в GKE  и запустили наше приложеие в GKE Kubernetes
 
-# kubectl get nodes
-NAME       STATUS   ROLES    AGE   VERSION
-worker-0   Ready    <none>   10h   v1.15.3
+
+Скриншот.
+./.github/Screen1.png
+
 
 
 ## Как запустить проект:
 
- kubectl get componentstatuses
-NAME                 STATUS    MESSAGE             ERROR
-controller-manager   Healthy   ok
-scheduler            Healthy   ok
-etcd-0               Healthy   {"health":"true"}
-etcd-2               Healthy   {"health":"true"}
-etcd-1               Healthy   {"health":"true"}
-
-NAME       STATUS   ROLES    AGE   VERSION
-worker-0   Ready    <none>   10h   v1.15.3
 
 ## Как проверить работоспособность:
+
+Скриншот.
+./.github/Screen1.png
+
 
 ## PR checklist
  - [ ] Выставил label с номером домашнего задания
