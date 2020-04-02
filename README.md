@@ -11,6 +11,15 @@ testapp_port = 9292
 
 DO
 
+kubernetes-5
+
+1) развернул и настроил Prometheus в k8s
+2) настроил  Prometheus и Grafana для сбора метрик
+3) EFK не делал
+
+
+
+
 kubernetes-4
 
 1) установил и настроил helm
