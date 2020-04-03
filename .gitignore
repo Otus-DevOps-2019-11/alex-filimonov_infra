@@ -8,6 +8,7 @@ packer/variables.json
 *.retry
 vault.key
 /jdauphant.nginx/
+/Gitlab_ci
 
 # Vagrant & molecule
 .vagrant/

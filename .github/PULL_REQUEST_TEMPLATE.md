@@ -1,39 +1,20 @@
-# Выполнено ДЗ № 27
+# Выполнено ДЗ № 28
 
  - [*] Основное ДЗ
  - [] Задание со *
 
 ## В процессе сделано:
 
-kubernetes-3
+kubernetes-4
 
-0) наcтроили плагин kube-dns, опубликовали наружу сервис UI (NodePort), перенастроили на LoadBalancer.
+kubernetes-4
 
-1) настроили Ingress контроллер
-alex@server:/opt/work/Test/otus/alex-filimonov_infra/kubernetes$ kubectl get ingress -n dev
-NAME   HOSTS   ADDRESS          PORTS     AGE
-ui     *       35.244.254.122   80, 443   86m
+1) установил и настроил helm
+2) долго и нудно разварачивал gitlab (проблемы были в лимитах) в результате удалось собрать на 4 нодах n1-standart
+3) собрал pipline но возникла проблема helm (Error: transport is closing) в результате билды деплоились но пайплайн на деплои падал пришлось пропускать
 
-2) Secret / TLS - настроили защиту
-alex@server:/opt/work/Test/otus/alex-filimonov_infra/kubernetes$ kubectl describe secret ui-ingress -n dev
-Name:         ui-ingress
-Namespace:    dev
-Labels:       <none>
-Annotations:  <none>
-
-Type:  kubernetes.io/tls
-
-Data
-====
-tls.crt:  1127 bytes
-tls.key:  1704 bytes
-
-
-4) Network Policies настоил и протестировал
-
-6) PersistentVolumes настоил и протестировал
-
-7) PersistentVolumeClaims настоил и протестировал
+в общем курсовую наверное не буду делать на k8s
+хотя если сам буду с нуля делать pipline возможно разберусь с траблами (и еще надо чето сделать с helm)
 
 
 
@@ -42,8 +23,6 @@ tls.key:  1704 bytes
 
 ## Как проверить работоспособность:
 
-Скриншот.
-./.github/Screen1.png
 
 
 ## PR checklist
